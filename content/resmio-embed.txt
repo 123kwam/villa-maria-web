@@ -1,0 +1,2 @@
+TODO: Owner to provide resmio widget embed code after sign-off.
+Account setup: owner creates resmio account → configures restaurant details, hours, table capacity → copies embed snippet from resmio dashboard → pastes here.
