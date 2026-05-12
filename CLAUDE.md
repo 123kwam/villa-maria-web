@@ -257,7 +257,5 @@ npm run typecheck  # tsc --noEmit
 - **Instagram:** @villa.maria.steakhouse — embed latest posts or link prominently
 - **Group dining:** offered — include a callout on Restaurant page
 
-## Still to confirm
 
-- [ ] Final short domain choice and availability
-- [ ] Owner approval on color palette and fonts before Phase 2
+
