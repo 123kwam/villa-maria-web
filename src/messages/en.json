@@ -111,5 +111,38 @@
     "titleTwo": "We'll save the booth.",
     "ctaReserve": "Reserve online",
     "phoneLabel": "or by phone"
+  },
+  "AboutPage": {
+    "eyebrow": "About",
+    "title": "Villa Maria.",
+    "subtitle": "Selim's parrilla, on Lange Leidsedwarsstraat.",
+    "interiorPhotoCaption": "A corner of the room.",
+    "closingEyebrow": "Come hungry",
+    "closingTitle": "The grill is on by twelve.",
+    "ctaReserve": "Reserve a table",
+    "ctaMenu": "See the menu"
+  },
+  "MenuPage": {
+    "eyebrow": "Carta",
+    "title": "The full menu.",
+    "subtitle": "Argentinian cuts, fish, vegetarian plates, sides. Prices include VAT.",
+    "jumpTo": "Jump to",
+    "priceHeader": "Price",
+    "weightHeader": "Weight",
+    "noteSauces": "All sauces €2.50.",
+    "noteCompleteDishes": "Served with salad, fries, rice or jacket potato.",
+    "noteFish": "Served with side dishes.",
+    "categories": {
+      "soups": "Soups",
+      "coldStarters": "Cold starters",
+      "salads": "Salads",
+      "warmStarters": "Warm starters",
+      "sides": "Side dishes",
+      "sauces": "Sauces",
+      "grilledMeat": "From the grill",
+      "vegetarian": "Vegetarian",
+      "completeDishes": "Main plates",
+      "fish": "Fish"
+    }
   }
 }

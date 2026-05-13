@@ -111,5 +111,38 @@
     "titleTwo": "Wij houden de bank vrij.",
     "ctaReserve": "Online reserveren",
     "phoneLabel": "of telefonisch"
+  },
+  "AboutPage": {
+    "eyebrow": "Over ons",
+    "title": "Villa Maria.",
+    "subtitle": "De parrilla van Selim, aan de Lange Leidsedwarsstraat.",
+    "interiorPhotoCaption": "Een hoekje van de zaal.",
+    "closingEyebrow": "Kom met honger",
+    "closingTitle": "De grill staat aan vanaf twaalf.",
+    "ctaReserve": "Reserveer een tafel",
+    "ctaMenu": "Bekijk de kaart"
+  },
+  "MenuPage": {
+    "eyebrow": "Menukaart",
+    "title": "De hele kaart.",
+    "subtitle": "Argentijnse stukken, vis, vegetarisch en bijgerechten. Prijzen inclusief btw.",
+    "jumpTo": "Spring naar",
+    "priceHeader": "Prijs",
+    "weightHeader": "Gewicht",
+    "noteSauces": "Alle sauzen €2,50.",
+    "noteCompleteDishes": "Geserveerd met salade, friet, rijst of gepofte aardappel.",
+    "noteFish": "Geserveerd met bijgerechten.",
+    "categories": {
+      "soups": "Soepen",
+      "coldStarters": "Koude voorgerechten",
+      "salads": "Salades",
+      "warmStarters": "Warme voorgerechten",
+      "sides": "Bijgerechten",
+      "sauces": "Sauzen",
+      "grilledMeat": "Van de grill",
+      "vegetarian": "Vegetarisch",
+      "completeDishes": "Hoofdgerechten",
+      "fish": "Vis"
+    }
   }
 }

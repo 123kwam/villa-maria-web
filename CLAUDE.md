@@ -241,7 +241,7 @@ npm run typecheck  # tsc --noEmit
 
 - [x] Phase 0: Scaffold Next.js, Tailwind, i18n, deploy empty to Vercel
 - [x] Phase 1: Layout shell — header (with language switch), footer, mobile nav, floating book CTA
-- [ ] Phase 2: Home page (the restaurant) — all 9 sections above
+- [x] Phase 2: Home page — hero / intro / menu preview / the room / group dining / awards / location / footer CTA. **Individual review quotes** section deferred until real reviews are sourced (awards strip carries the trust signal for now).
 - [ ] Phase 3: Menu page — full menu with categories
 - [ ] Phase 4: Book page — booking system decision + integration
 - [ ] Phase 5: About page

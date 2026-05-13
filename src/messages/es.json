@@ -111,5 +111,38 @@
     "titleTwo": "Te guardamos el banco.",
     "ctaReserve": "Reservar online",
     "phoneLabel": "o por teléfono"
+  },
+  "AboutPage": {
+    "eyebrow": "Nosotros",
+    "title": "Villa Maria.",
+    "subtitle": "La parrilla de Selim, en Lange Leidsedwarsstraat.",
+    "interiorPhotoCaption": "Un rincón del salón.",
+    "closingEyebrow": "Vení con hambre",
+    "closingTitle": "La parrilla arranca a las doce.",
+    "ctaReserve": "Reservar mesa",
+    "ctaMenu": "Ver la carta"
+  },
+  "MenuPage": {
+    "eyebrow": "Carta",
+    "title": "La carta completa.",
+    "subtitle": "Cortes argentinos, pescado, platos vegetarianos y guarniciones. Precios con IVA incluido.",
+    "jumpTo": "Ir a",
+    "priceHeader": "Precio",
+    "weightHeader": "Gramaje",
+    "noteSauces": "Todas las salsas €2,50.",
+    "noteCompleteDishes": "Servido con ensalada, papas fritas, arroz o papa al horno.",
+    "noteFish": "Servido con guarniciones.",
+    "categories": {
+      "soups": "Sopas",
+      "coldStarters": "Entrantes fríos",
+      "salads": "Ensaladas",
+      "warmStarters": "Entrantes calientes",
+      "sides": "Guarniciones",
+      "sauces": "Salsas",
+      "grilledMeat": "De la parrilla",
+      "vegetarian": "Vegetariano",
+      "completeDishes": "Platos principales",
+      "fish": "Pescado"
+    }
   }
 }

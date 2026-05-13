@@ -20,6 +20,17 @@
 
 html {
   font-feature-settings: normal;
+  scroll-behavior: smooth;
+}
+
+[id] {
+  scroll-margin-top: 6rem;
+}
+
+@media (min-width: 1024px) {
+  [id] {
+    scroll-margin-top: 8rem;
+  }
 }
 
 body {
