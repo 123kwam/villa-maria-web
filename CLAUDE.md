@@ -14,18 +14,18 @@ Rebuild **restaurantvillamaria.nl** as a fast, modern, mobile-first site that co
 
 ## Stack
 
-- **Framework:** Next.js 14 (App Router)
+- **Framework:** Next.js 16 (App Router, Turbopack). Note: Next 16 renames `middleware` → `proxy` — the file is `src/proxy.ts`, not `src/middleware.ts`.
 - **Language:** TypeScript, strict mode
-- **Styling:** Tailwind CSS only — no separate CSS files, no CSS-in-JS
-- **Fonts:** `next/font` (no external font links)
+- **Styling:** Tailwind CSS v4 only (CSS-first config via `@theme` in `src/styles/globals.css`) — no separate CSS files for app logic, no CSS-in-JS
+- **Fonts:** `next/font` (Fraunces display + Inter body) — no external font links
 - **Images:** `next/image` always — never raw `<img>` tags
 - **Deployment:** Vercel
 - **Analytics:** Vercel Analytics + Plausible
-- **i18n:** `next-intl` for EN/NL switching
+- **i18n:** `next-intl` for EN/NL/ES switching (routes at `/en/*`, `/nl/*`, `/es/*`). Default locale is EN. Argentinian-flavored Spanish — "Carta" for menu, "Parrilla" referenced where it adds character.
 - **Forms:** React Hook Form + Zod validation
 - **Booking:** resmio embed widget
 
-**Versions to use:** Latest stable. Run `npm create next-app@latest` fresh.
+**Versions to use:** Latest stable. Currently on Next 16.2.6 + React 19.2.4 + Tailwind 4. Scaffolded via `npm create next-app@latest`.
 
 ---
 
@@ -129,21 +129,20 @@ Read these files at build time or copy into `/public/` as appropriate. Never har
 
 ### Pages
 
-**Home**
+**Home (the restaurant)** — the homepage IS the restaurant page. Sections:
 1. Hero — full-bleed dark photo, headline, two CTAs (Book / See Menu)
 2. Intro — 2-3 sentences: who we are, what we grill, where we are
 3. Menu preview — 4-6 signature cuts with prices, link to full menu
-4. Awards strip — horizontal row of TripAdvisor badges (2024, 2022, 2021, 2015) with one-line summary: "Rated excellent by 821 travellers — Travellers' Choice winner 4 years running." Keep it visually clean: badges in a single row on desktop, 2x2 grid on mobile, on a cream background to make the badges pop.
-5. Social proof — 3 real recent reviews with source + date
-6. The room — 2-3 interior shots + terrace
-7. Location — embedded map + walking time from Leidseplein
-8. Footer CTA — Book now
+4. The room — 2-3 interior shots + terrace
+5. Group dining callout — "Group bookings available" with phone CTA
+6. Awards strip — horizontal row of TripAdvisor badges (2024, 2022, 2021, 2015) with one-line summary: "Rated excellent by 821 travellers — Travellers' Choice winner 4 years running." Badges in a single row on desktop, 2x2 grid on mobile, on a cream background.
+7. Social proof — 3 real recent reviews with source + date
+8. Location — embedded map + walking time from Leidseplein
+9. Footer CTA — Book now
 
 **Menu** — Full menu, categorized, with prices. Downloadable PDF link. NL/EN toggle works here too.
 
 **Book** — resmio booking widget embedded. Style the wrapper to match the site (cream background, generous padding, headline + 1-line reassurance copy above the widget, phone number as fallback below).
-
-**Restaurant** — Photos + 2 paragraphs about the space, terrace, and group dining (yes, available — include a clear "Group bookings" callout with phone CTA).
 
 **About** — Use the content from `/content/about_company` (provided by owner). Lay it out clean and readable, not corporate.
 
@@ -240,17 +239,16 @@ npm run typecheck  # tsc --noEmit
 
 ## Build Order (update as you go)
 
-- [ ] Phase 0: Scaffold Next.js, Tailwind, i18n, deploy empty to Vercel
-- [ ] Phase 1: Layout shell — header (with language switch), footer, mobile nav, floating book CTA
-- [ ] Phase 2: Home page — all 7 sections above
+- [x] Phase 0: Scaffold Next.js, Tailwind, i18n, deploy empty to Vercel
+- [x] Phase 1: Layout shell — header (with language switch), footer, mobile nav, floating book CTA
+- [ ] Phase 2: Home page (the restaurant) — all 9 sections above
 - [ ] Phase 3: Menu page — full menu with categories
 - [ ] Phase 4: Book page — booking system decision + integration
-- [ ] Phase 5: Restaurant page
-- [ ] Phase 6: About page
-- [ ] Phase 7: Contact page
-- [ ] Phase 8: SEO pass — schema, OG images, sitemap, hreflang
-- [ ] Phase 9: Performance pass — Lighthouse ≥ 90 on mobile
-- [ ] Phase 10: Domain switch + Google Search Console + analytics
+- [ ] Phase 5: About page
+- [ ] Phase 6: Contact page
+- [ ] Phase 7: SEO pass — schema, OG images, sitemap, hreflang
+- [ ] Phase 8: Performance pass — Lighthouse ≥ 90 on mobile
+- [ ] Phase 9: Domain switch + Google Search Console + analytics
 
 ---
 

@@ -1,0 +1,115 @@
+{
+  "Meta": {
+    "siteTitle": "Villa Maria Steakhouse — Argentinian grill in Amsterdam",
+    "siteDescription": "Argentinian steakhouse near Leidseplein. Charcoal-grilled steaks, spare ribs, fish. Daily 12:00 – 23:00."
+  },
+  "Nav": {
+    "home": "Home",
+    "menu": "Menu",
+    "about": "About",
+    "contact": "Contact",
+    "book": "Reserve"
+  },
+  "Header": {
+    "addressShort": "Lange Leidsedwarsstraat 45",
+    "hoursShort": "Daily 12:00 – 23:00",
+    "phoneShort": "+31 20 622 3759",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "languageLabel": "Language",
+    "logoAlt": "Villa Maria Steakhouse"
+  },
+  "MobileMenu": {
+    "leidsepleinWalk": "Five minutes from Leidseplein"
+  },
+  "Footer": {
+    "tagline": "Argentinian grill, Amsterdam — the parrilla, the fire, the cut.",
+    "visitLabel": "Find us",
+    "addressLine1": "Lange Leidsedwarsstraat 45",
+    "addressLine2": "1017 NG Amsterdam",
+    "directions": "Get directions",
+    "leidsepleinWalk": "5 minutes from Leidseplein",
+    "hoursLabel": "Open daily",
+    "hoursValue": "12:00 – 23:00",
+    "hoursNote": "Lunch through dinner, no break.",
+    "reachLabel": "Reach us",
+    "phoneLabel": "Reservations",
+    "phoneValue": "+31 20 622 3759",
+    "emailValue": "info@restaurantvillamaria.nl",
+    "instagramLabel": "Instagram",
+    "instagramHandle": "@villa.maria.steakhouse",
+    "rights": "Villa Maria Steakhouse",
+    "rightsSuffix": "All rights reserved.",
+    "awardsLabel": "TripAdvisor Travellers' Choice — 2024 · 2022 · 2021"
+  },
+  "Home": {
+    "comingSoon": "Coming soon."
+  },
+  "FloatingCTA": {
+    "label": "Reserve"
+  },
+  "Hero": {
+    "eyebrow": "Villa Maria · Steakhouse · Amsterdam",
+    "title": "Open charcoal.",
+    "titleTwo": "Eight cuts.",
+    "titleThree": "Daily.",
+    "subtitle": "An Argentinian grill on Lange Leidsedwarsstraat — five minutes from Leidseplein.",
+    "ctaReserve": "Reserve a table",
+    "ctaMenu": "See the menu",
+    "imageAlt": "Steaks, ribs and shrimp on the charcoal grill at Villa Maria"
+  },
+  "Intro": {
+    "eyebrow": "The story",
+    "p1": "Selim, the owner, fell in love with Argentinian food walking Buenos Aires at night — meeting grill smoke at every corner.",
+    "p2": "Villa Maria runs the same way. Charcoal first. The best cuts selected each morning. A chef who knows the fire.",
+    "p3": "Pure, smoky, juicy — five minutes from Leidseplein."
+  },
+  "MenuPreview": {
+    "eyebrow": "From the grill",
+    "title": "Six from the parrilla.",
+    "subtitle": "Pick the weight at the table. The rest is on the menu.",
+    "signaturePhotoCaption": "Bife with grilled tomato, salad, fries.",
+    "weightHeader": "From",
+    "cta": "See the full menu"
+  },
+  "TheRoom": {
+    "eyebrow": "The room",
+    "title": "Cowhide booths and arched red walls.",
+    "p": "A small Amsterdam corner that smells of charcoal by noon. In summer the terrace spills onto Lange Leidsedwarsstraat. Two cuts down from Leidseplein.",
+    "captionDining": "The dining room",
+    "captionBooth": "A corner booth",
+    "captionTerrace": "Terrace, in season"
+  },
+  "GroupDining": {
+    "eyebrow": "Groups",
+    "title": "Eight to forty around one fire.",
+    "p": "Tables for groups can be booked by phone. Whole-room buyouts on quiet evenings, by arrangement.",
+    "cta": "Call to arrange"
+  },
+  "Awards": {
+    "eyebrow": "TripAdvisor",
+    "title": "Rated excellent by 821 travellers.",
+    "subtitle": "Travellers' Choice — 2024 · 2022 · 2021. Certificate of Excellence — 2015.",
+    "cta": "Read the reviews",
+    "altTripadvisor2024": "TripAdvisor Travellers' Choice 2024",
+    "altTripadvisor2022": "TripAdvisor Travellers' Choice 2022",
+    "altTripadvisor2021": "TripAdvisor Travellers' Choice 2021",
+    "altCertificate2015": "TripAdvisor Certificate of Excellence 2015"
+  },
+  "Location": {
+    "eyebrow": "Find us",
+    "title": "Lange Leidsedwarsstraat 45",
+    "titleTwo": "Amsterdam",
+    "p1": "Five minutes on foot from Leidseplein.",
+    "p2": "Open daily, 12:00 to 23:00.",
+    "cta": "Get directions",
+    "mapTitle": "Map showing Villa Maria Steakhouse at Lange Leidsedwarsstraat 45, Amsterdam"
+  },
+  "FooterCTA": {
+    "eyebrow": "Reserve",
+    "title": "Pick the night.",
+    "titleTwo": "We'll save the booth.",
+    "ctaReserve": "Reserve online",
+    "phoneLabel": "or by phone"
+  }
+}
