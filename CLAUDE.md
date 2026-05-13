@@ -110,12 +110,19 @@ Use red as the dominant brand color (header accents, CTAs, dividers). Blue used 
 - **Terrace:** Yes, seasonal
 - **Group dining:** Yes, available
 - **Instagram:** [@villa.maria.steakhouse](https://www.instagram.com/villa.maria.steakhouse/)
+- **Awards (TripAdvisor):**
+  - 2024 Travellers' Choice Award
+  - 2022 Travellers' Choice
+  - 2021 Travellers' Choice
+  - 2015 Certificaat van Uitmuntendheid (Certificate of Excellence)
+  - "Rated excellent by 821 travellers" on TripAdvisor
 
 ### Content Sources (owner-provided files)
 All sit in `/content/` at the project root:
 - `/content/logo/` — logo files (use these, do not pull from old site)
 - `/content/menu/` — menu PDF and prices
 - `/content/about_company` — about page copy
+- `/content/awards/` — TripAdvisor award badges (2024, 2022, 2021, 2015)
 - `/content/images/` (if provided) — any photos owner wants used
 
 Read these files at build time or copy into `/public/` as appropriate. Never hardcode the about copy in a component — read from the file so it can be updated without a code change.
@@ -126,10 +133,11 @@ Read these files at build time or copy into `/public/` as appropriate. Never har
 1. Hero — full-bleed dark photo, headline, two CTAs (Book / See Menu)
 2. Intro — 2-3 sentences: who we are, what we grill, where we are
 3. Menu preview — 4-6 signature cuts with prices, link to full menu
-4. Social proof — 3 real recent reviews with source + date
-5. The room — 2-3 interior shots + terrace
-6. Location — embedded map + walking time from Leidseplein
-7. Footer CTA — Book now
+4. Awards strip — horizontal row of TripAdvisor badges (2024, 2022, 2021, 2015) with one-line summary: "Rated excellent by 821 travellers — Travellers' Choice winner 4 years running." Keep it visually clean: badges in a single row on desktop, 2x2 grid on mobile, on a cream background to make the badges pop.
+5. Social proof — 3 real recent reviews with source + date
+6. The room — 2-3 interior shots + terrace
+7. Location — embedded map + walking time from Leidseplein
+8. Footer CTA — Book now
 
 **Menu** — Full menu, categorized, with prices. Downloadable PDF link. NL/EN toggle works here too.
 
@@ -256,6 +264,3 @@ npm run typecheck  # tsc --noEmit
 - **About copy:** owner-provided in `/content/about_company`
 - **Instagram:** @villa.maria.steakhouse — embed latest posts or link prominently
 - **Group dining:** offered — include a callout on Restaurant page
-
-
-
