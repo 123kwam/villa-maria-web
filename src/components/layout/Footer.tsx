@@ -4,7 +4,7 @@ import { Link } from "@/i18n/navigation";
 import { Container } from "@/components/ui/Container";
 
 const MAPS_URL =
-  "https://www.google.com/maps/place/Lange+Leidsedwarsstraat+45,+1017+NG+Amsterdam";
+  "https://www.google.com/maps/place/Villa+Maria+Steakhouse/@52.3640146,4.8846737,600m/data=!3m2!1e3!5s0x47c609e908b7b63b:0xc2e0e67d9884a778!4m15!1m8!3m7!1s0x47c609e90447de8f:0x85d217a00b9e55dc!2sLange+Leidsedwarsstraat+45,+1017+NG+Amsterdam!3b1!8m2!3d52.3640146!4d4.8846737!16s%2Fg%2F11nntqcbrj!3m5!1s0x47c609e90414e71b:0xb97815d1ed7a741!8m2!3d52.3640146!4d4.8846737!16s%2Fg%2F124stg9lr!5m1!1e1?entry=ttu&g_ep=EgoyMDI2MDUxMS4wIKXMDSoASAFQAw%3D%3D";
 const INSTAGRAM_URL = "https://www.instagram.com/villa.maria.steakhouse/";
 
 export async function Footer() {

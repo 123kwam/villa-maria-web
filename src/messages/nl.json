@@ -145,7 +145,34 @@
     "fromLeidsepleinBody": "Vijf minuten lopen. Sla het Leidseplein af richting Lange Leidsedwarsstraat — wij zitten een straat verderop, aan de rechterkant.",
     "fromCentraalLabel": "Vanaf Amsterdam Centraal",
     "fromCentraalBody": "Tram naar Leidseplein — vijftien minuten — daarna vijf minuten lopen.",
-    "mapTitle": "Kaart van Villa Maria Steakhouse aan de Lange Leidsedwarsstraat 45, Amsterdam"
+    "mapTitle": "Kaart van Villa Maria Steakhouse aan de Lange Leidsedwarsstraat 45, Amsterdam",
+    "form": {
+      "eyebrow": "Schrijf ons",
+      "title": "Stuur een bericht.",
+      "intro": "Vragen, groepsaanvragen, alles wat je kwijt wil. We antwoorden binnen een dag.",
+      "firstName": "Voornaam",
+      "lastName": "Achternaam",
+      "email": "E-mail",
+      "phone": "Telefoon",
+      "message": "Bericht",
+      "messageHint": "Optioneel",
+      "submit": "Versturen",
+      "sending": "Versturen…",
+      "disclaimer": "We delen je gegevens met niemand.",
+      "successEyebrow": "Verstuurd",
+      "successTitle": "Bedankt.",
+      "successBody": "We nemen snel contact op.",
+      "sendAnother": "Nog een bericht versturen",
+      "errorBody": "Er ging iets mis. Probeer het opnieuw, of mail ons direct.",
+      "errors": {
+        "firstNameRequired": "Voornaam is verplicht.",
+        "lastNameRequired": "Achternaam is verplicht.",
+        "emailRequired": "E-mail is verplicht.",
+        "emailInvalid": "Vul een geldig e-mailadres in.",
+        "phoneRequired": "Telefoon is verplicht.",
+        "tooLong": "Dat is iets te lang."
+      }
+    }
   },
   "MenuPage": {
     "eyebrow": "Menukaart",

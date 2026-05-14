@@ -145,7 +145,34 @@
     "fromLeidsepleinBody": "Cinco minutos a pie. Bajá del Leidseplein por Lange Leidsedwarsstraat — estamos a una cuadra, sobre la derecha.",
     "fromCentraalLabel": "Desde Amsterdam Centraal",
     "fromCentraalBody": "Tranvía hasta Leidseplein — quince minutos — y después cinco a pie.",
-    "mapTitle": "Mapa de Villa Maria Steakhouse en Lange Leidsedwarsstraat 45, Amsterdam"
+    "mapTitle": "Mapa de Villa Maria Steakhouse en Lange Leidsedwarsstraat 45, Amsterdam",
+    "form": {
+      "eyebrow": "Escribinos",
+      "title": "Mandanos un mensaje.",
+      "intro": "Preguntas, reservas de grupo, lo que necesites. Contestamos en menos de un día.",
+      "firstName": "Nombre",
+      "lastName": "Apellido",
+      "email": "Email",
+      "phone": "Teléfono",
+      "message": "Mensaje",
+      "messageHint": "Opcional",
+      "submit": "Enviar",
+      "sending": "Enviando…",
+      "disclaimer": "Tus datos quedan entre nosotros.",
+      "successEyebrow": "Enviado",
+      "successTitle": "Gracias.",
+      "successBody": "Te respondemos enseguida.",
+      "sendAnother": "Mandar otro",
+      "errorBody": "Algo salió mal. Probá de nuevo, o escribinos directo.",
+      "errors": {
+        "firstNameRequired": "Falta el nombre.",
+        "lastNameRequired": "Falta el apellido.",
+        "emailRequired": "Falta el email.",
+        "emailInvalid": "Poné un email válido.",
+        "phoneRequired": "Falta el teléfono.",
+        "tooLong": "Es un poco largo."
+      }
+    }
   },
   "MenuPage": {
     "eyebrow": "Carta",

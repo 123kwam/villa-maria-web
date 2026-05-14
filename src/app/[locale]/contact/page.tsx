@@ -1,9 +1,9 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Container } from "@/components/ui/Container";
-import { FooterCTA } from "@/components/sections/FooterCTA";
+import { ContactForm } from "@/components/sections/ContactForm";
 
 const MAPS_DIRECTIONS_URL =
-  "https://www.google.com/maps/place/Lange+Leidsedwarsstraat+45,+1017+NG+Amsterdam";
+  "https://www.google.com/maps/place/Villa+Maria+Steakhouse/@52.3640146,4.8846737,600m/data=!3m2!1e3!5s0x47c609e908b7b63b:0xc2e0e67d9884a778!4m15!1m8!3m7!1s0x47c609e90447de8f:0x85d217a00b9e55dc!2sLange+Leidsedwarsstraat+45,+1017+NG+Amsterdam!3b1!8m2!3d52.3640146!4d4.8846737!16s%2Fg%2F11nntqcbrj!3m5!1s0x47c609e90414e71b:0xb97815d1ed7a741!8m2!3d52.3640146!4d4.8846737!16s%2Fg%2F124stg9lr!5m1!1e1?entry=ttu&g_ep=EgoyMDI2MDUxMS4wIKXMDSoASAFQAw%3D%3D";
 const MAPS_EMBED_URL =
   "https://www.google.com/maps?q=Lange+Leidsedwarsstraat+45,+1017+NG+Amsterdam&output=embed";
 const INSTAGRAM_URL = "https://www.instagram.com/villa.maria.steakhouse/";
@@ -41,11 +41,16 @@ export default async function ContactPage({
         <Container className="py-16 md:py-24">
           <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-4 lg:gap-10">
             <InfoColumn index="01" label={t("addressLabel")}>
-              <p className="font-display text-2xl leading-snug">
+              <a
+                href={MAPS_DIRECTIONS_URL}
+                target="_blank"
+                rel="noreferrer"
+                className="block font-display text-2xl leading-snug underline-offset-4 hover:text-vm-red hover:underline"
+              >
                 {t("addressLine1")}
                 <br />
                 {t("addressLine2")}
-              </p>
+              </a>
               <a
                 href={MAPS_DIRECTIONS_URL}
                 target="_blank"
@@ -141,7 +146,26 @@ export default async function ContactPage({
         </Container>
       </section>
 
-      <FooterCTA />
+      <section className="bg-vm-cream text-vm-black">
+        <Container className="py-20 md:py-28">
+          <div className="grid gap-12 md:grid-cols-12 md:gap-16">
+            <div className="md:col-span-5">
+              <p className="text-[11px] uppercase tracking-[0.35em] text-vm-red">
+                {t("form.eyebrow")}
+              </p>
+              <h2 className="mt-4 font-display text-4xl leading-tight tracking-tight md:text-5xl">
+                {t("form.title")}
+              </h2>
+              <p className="mt-6 max-w-md text-base leading-relaxed text-vm-black/80 md:text-lg">
+                {t("form.intro")}
+              </p>
+            </div>
+            <div className="md:col-span-7">
+              <ContactForm />
+            </div>
+          </div>
+        </Container>
+      </section>
     </main>
   );
 }
