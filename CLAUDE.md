@@ -242,10 +242,10 @@ npm run typecheck  # tsc --noEmit
 - [x] Phase 0: Scaffold Next.js, Tailwind, i18n, deploy empty to Vercel
 - [x] Phase 1: Layout shell — header (with language switch), footer, mobile nav, floating book CTA
 - [x] Phase 2: Home page — hero / intro / menu preview / the room / group dining / awards / location / footer CTA. **Individual review quotes** section deferred until real reviews are sourced (awards strip carries the trust signal for now).
-- [ ] Phase 3: Menu page — full menu with categories
-- [ ] Phase 4: Book page — booking system decision + integration
-- [ ] Phase 5: About page
-- [ ] Phase 6: Contact page
+- [x] Phase 3: Menu page — full menu with categories
+- [ ] Phase 4: Book page — booking system decision + integration (waiting on resmio account ID / embed snippet before building)
+- [x] Phase 5: About page
+- [x] Phase 6: Contact page — dark hero, cream info grid (address / hours / phone / email + IG), map with directions from Leidseplein and Centraal, reserve CTA
 - [ ] Phase 7: SEO pass — schema, OG images, sitemap, hreflang
 - [ ] Phase 8: Performance pass — Lighthouse ≥ 90 on mobile
 - [ ] Phase 9: Domain switch + Google Search Console + analytics
