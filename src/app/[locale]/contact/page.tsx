@@ -28,7 +28,7 @@ export default async function ContactPage({
           <p className="text-[11px] uppercase tracking-[0.35em] text-vm-red">
             {t("eyebrow")}
           </p>
-          <h1 className="mt-4 font-display text-5xl leading-[0.95] tracking-tight md:text-7xl">
+          <h1 className="mt-4 text-5xl md:text-7xl">
             {t("title")}
           </h1>
           <p className="mt-6 max-w-xl text-base leading-relaxed text-vm-cream/80 md:text-lg">
@@ -111,7 +111,7 @@ export default async function ContactPage({
               <p className="text-[11px] uppercase tracking-[0.35em] text-vm-red">
                 {t("directionsEyebrow")}
               </p>
-              <h2 className="mt-4 font-display text-4xl leading-tight tracking-tight md:text-5xl">
+              <h2 className="mt-4 text-4xl leading-tight md:text-5xl">
                 <span className="block">{t("directionsTitle")}</span>
                 <span className="block text-vm-cream/70">
                   {t("directionsTitleTwo")}
@@ -153,7 +153,7 @@ export default async function ContactPage({
               <p className="text-[11px] uppercase tracking-[0.35em] text-vm-red">
                 {t("form.eyebrow")}
               </p>
-              <h2 className="mt-4 font-display text-4xl leading-tight tracking-tight md:text-5xl">
+              <h2 className="mt-4 text-4xl leading-tight md:text-5xl">
                 {t("form.title")}
               </h2>
               <p className="mt-6 max-w-md text-base leading-relaxed text-vm-black/80 md:text-lg">

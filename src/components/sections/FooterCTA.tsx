@@ -1,6 +1,7 @@
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { Container } from "@/components/ui/Container";
+import { Eyebrow } from "@/components/ui/Eyebrow";
 
 const PHONE_DISPLAY = "+31 20 622 3759";
 const PHONE_TEL = "+31206223759";
@@ -13,10 +14,8 @@ export async function FooterCTA() {
       <Container className="py-20 md:py-28">
         <div className="flex flex-col items-start gap-10 md:flex-row md:items-end md:justify-between md:gap-16">
           <div className="max-w-2xl">
-            <p className="text-[11px] uppercase tracking-[0.35em] text-vm-red">
-              {t("eyebrow")}
-            </p>
-            <h2 className="mt-4 font-display text-5xl leading-[0.95] tracking-tight md:text-6xl lg:text-7xl">
+            <Eyebrow>{t("eyebrow")}</Eyebrow>
+            <h2 className="mt-4 text-5xl leading-[0.95] md:text-6xl lg:text-7xl">
               <span className="block">{t("title")}</span>
               <span className="block italic text-vm-red">{t("titleTwo")}</span>
             </h2>

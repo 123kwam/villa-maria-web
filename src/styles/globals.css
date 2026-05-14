@@ -10,6 +10,7 @@
 
   --font-display: var(--font-fraunces), Georgia, serif;
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-label: var(--font-inter-tight), ui-sans-serif, system-ui, sans-serif;
 
   --font-feature-settings-tabular: "tnum";
 
@@ -40,4 +41,29 @@ body {
 
 .tabular {
   font-variant-numeric: tabular-nums;
+}
+
+@layer base {
+  h1,
+  h2 {
+    font-family: var(--font-display);
+    font-weight: 400;
+  }
+  h1 {
+    letter-spacing: -0.04em;
+    line-height: 1.25;
+  }
+  @media (min-width: 768px) {
+    h1 {
+      line-height: 1;
+    }
+  }
+  h2 {
+    letter-spacing: -0.02em;
+  }
+}
+
+.price {
+  font-variant-numeric: tabular-nums lining-nums;
+  font-feature-settings: "tnum", "lnum";
 }

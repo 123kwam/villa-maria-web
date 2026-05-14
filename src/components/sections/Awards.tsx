@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 import { Container } from "@/components/ui/Container";
+import { Eyebrow } from "@/components/ui/Eyebrow";
 
 const TRIPADVISOR_URL =
   "https://www.tripadvisor.com/Restaurant_Review-g188590-d2244593-Reviews-Villa_Maria_Steakhouse-Amsterdam_North_Holland_Province.html";
@@ -20,10 +21,8 @@ export async function Awards() {
       <Container className="py-20 md:py-28">
         <div className="grid gap-12 md:grid-cols-12 md:gap-16">
           <div className="md:col-span-5">
-            <p className="text-[11px] uppercase tracking-[0.35em] text-vm-red">
-              {t("eyebrow")}
-            </p>
-            <h2 className="mt-4 font-display text-3xl leading-tight tracking-tight md:text-4xl">
+            <Eyebrow>{t("eyebrow")}</Eyebrow>
+            <h2 className="mt-4 text-3xl leading-tight md:text-4xl">
               {t("title")}
             </h2>
             <p className="mt-4 max-w-sm text-base leading-relaxed text-vm-smoke">

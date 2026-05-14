@@ -25,7 +25,7 @@ export default async function AboutPage({
           <p className="text-[11px] uppercase tracking-[0.35em] text-vm-red">
             {t("eyebrow")}
           </p>
-          <h1 className="mt-4 font-display text-5xl leading-[0.95] tracking-tight md:text-7xl">
+          <h1 className="mt-4 text-5xl md:text-7xl">
             {t("title")}
           </h1>
           <p className="mt-6 max-w-xl text-base leading-relaxed text-vm-cream/80 md:text-lg">
@@ -60,7 +60,7 @@ export default async function AboutPage({
                   <span className="font-sans text-[11px] tabular-nums tracking-[0.3em] text-vm-red">
                     {String(i + 1).padStart(2, "0")}
                   </span>
-                  <h2 className="mt-4 font-display text-3xl leading-tight tracking-tight md:text-4xl">
+                  <h2 className="mt-4 text-3xl leading-tight md:text-4xl">
                     {block.title}
                   </h2>
                 </div>
@@ -82,7 +82,7 @@ export default async function AboutPage({
               <p className="text-[11px] uppercase tracking-[0.35em] text-vm-red">
                 {t("closingEyebrow")}
               </p>
-              <h2 className="mt-4 font-display text-4xl leading-tight tracking-tight md:text-5xl">
+              <h2 className="mt-4 text-4xl leading-tight md:text-5xl">
                 {t("closingTitle")}
               </h2>
             </div>

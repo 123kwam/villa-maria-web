@@ -32,7 +32,7 @@ export async function Hero() {
           <p className="mb-6 text-[11px] uppercase tracking-[0.35em] text-vm-cream/70">
             {t("eyebrow")}
           </p>
-          <h1 className="font-display text-5xl leading-[0.95] tracking-tight text-vm-cream md:text-7xl lg:text-[5.5rem]">
+          <h1 className="text-5xl text-vm-cream md:text-7xl lg:text-[5.5rem]">
             <span className="block">{t("title")}</span>
             <span className="block text-vm-cream/85">{t("titleTwo")}</span>
             <span className="block italic text-vm-red">{t("titleThree")}</span>

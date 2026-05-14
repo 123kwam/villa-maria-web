@@ -33,7 +33,7 @@ export async function MenuSection({ section, index }: Props) {
         <span className="font-sans text-[11px] tabular-nums tracking-[0.3em] text-vm-red">
           {String(index + 1).padStart(2, "0")}
         </span>
-        <h2 className="font-display text-3xl tracking-tight md:text-4xl">
+        <h2 className="text-3xl md:text-4xl">
           {tCategories(section.key)}
         </h2>
         {note && (
@@ -78,7 +78,7 @@ function SingleList({ items }: { items: SingleItem[] }) {
             aria-hidden
             className="mt-2 hidden flex-1 self-end border-b border-dotted border-vm-black/20 md:block"
           />
-          <span className="font-display text-lg tabular-nums text-vm-black md:text-xl">
+          <span className="price font-display text-lg text-vm-black md:text-xl">
             {item.price}
           </span>
         </li>
@@ -131,7 +131,7 @@ function WeightedTable({
                 {item.weights.map((w) => (
                   <td
                     key={w.weight}
-                    className="py-4 text-right font-display text-lg tabular-nums"
+                    className="price py-4 text-right font-display text-lg"
                   >
                     {w.price}
                   </td>
@@ -163,7 +163,7 @@ function WeightedTable({
                   <p className="text-[10px] uppercase tracking-[0.2em] text-vm-smoke">
                     {w.weight}
                   </p>
-                  <p className="mt-1 font-display text-sm tabular-nums">
+                  <p className="price mt-1 font-display text-sm">
                     {w.price}
                   </p>
                 </div>

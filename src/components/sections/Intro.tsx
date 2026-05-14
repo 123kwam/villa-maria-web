@@ -1,5 +1,6 @@
 import { getTranslations } from "next-intl/server";
 import { Container } from "@/components/ui/Container";
+import { Eyebrow } from "@/components/ui/Eyebrow";
 
 export async function Intro() {
   const t = await getTranslations("Intro");
@@ -9,17 +10,11 @@ export async function Intro() {
       <Container className="py-20 md:py-28">
         <div className="grid gap-10 md:grid-cols-12 md:gap-16">
           <div className="md:col-span-3">
-            <p className="text-[11px] uppercase tracking-[0.35em] text-vm-red">
-              {t("eyebrow")}
-            </p>
-            <div
-              aria-hidden
-              className="mt-4 h-px w-12 bg-vm-red"
-            />
+            <Eyebrow>{t("eyebrow")}</Eyebrow>
           </div>
 
           <div className="md:col-span-9">
-            <p className="font-display text-2xl leading-snug text-vm-black md:text-4xl">
+            <p className="font-display text-2xl leading-snug text-vm-black first-letter:float-left first-letter:mt-1 first-letter:pr-2 first-letter:font-display first-letter:text-[4em] first-letter:leading-[0.9] first-letter:text-vm-red md:text-4xl">
               {t("p1")}
             </p>
             <p className="mt-6 max-w-2xl text-base leading-relaxed text-vm-smoke md:text-lg">

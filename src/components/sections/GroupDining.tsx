@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 import { Container } from "@/components/ui/Container";
+import { Eyebrow } from "@/components/ui/Eyebrow";
 
 const PHONE_DISPLAY = "+31 20 622 3759";
 const PHONE_TEL = "+31206223759";
@@ -27,10 +28,8 @@ export async function GroupDining() {
       <Container className="relative py-20 md:py-28">
         <div className="grid gap-10 md:grid-cols-12">
           <div className="md:col-span-7">
-            <p className="text-[11px] uppercase tracking-[0.35em] text-vm-red">
-              {t("eyebrow")}
-            </p>
-            <h2 className="mt-4 font-display text-4xl leading-tight tracking-tight md:text-5xl">
+            <Eyebrow>{t("eyebrow")}</Eyebrow>
+            <h2 className="mt-4 text-4xl leading-tight md:text-5xl">
               {t("title")}
             </h2>
             <p className="mt-6 max-w-xl text-base leading-relaxed text-vm-cream/75 md:text-lg">

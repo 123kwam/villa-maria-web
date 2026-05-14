@@ -21,7 +21,7 @@ export default async function MenuPage({
           <p className="text-[11px] uppercase tracking-[0.35em] text-vm-red">
             {t("eyebrow")}
           </p>
-          <h1 className="mt-4 font-display text-5xl leading-[0.95] tracking-tight md:text-7xl">
+          <h1 className="mt-4 text-5xl md:text-7xl">
             {t("title")}
           </h1>
           <p className="mt-6 max-w-xl text-base leading-relaxed text-vm-smoke md:text-lg">

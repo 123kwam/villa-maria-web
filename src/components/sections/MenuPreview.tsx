@@ -2,6 +2,7 @@ import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { Container } from "@/components/ui/Container";
+import { Eyebrow } from "@/components/ui/Eyebrow";
 
 type Item = {
   name: string;
@@ -27,10 +28,8 @@ export async function MenuPreview() {
       <Container className="py-20 md:py-28">
         <div className="grid gap-14 md:grid-cols-12 md:gap-12">
           <div className="md:col-span-7">
-            <p className="text-[11px] uppercase tracking-[0.35em] text-vm-red">
-              {t("eyebrow")}
-            </p>
-            <h2 className="mt-4 font-display text-4xl leading-tight tracking-tight md:text-5xl">
+            <Eyebrow>{t("eyebrow")}</Eyebrow>
+            <h2 className="mt-4 text-4xl leading-tight md:text-5xl">
               {t("title")}
             </h2>
             <p className="mt-3 max-w-md text-base leading-relaxed text-vm-cream/65">
@@ -63,7 +62,7 @@ export async function MenuPreview() {
                           {item.weight}
                         </span>
                       )}
-                      <span className="font-display text-lg text-vm-cream md:text-xl">
+                      <span className="price font-display text-lg text-vm-cream md:text-xl">
                         {item.price}
                       </span>
                     </div>
