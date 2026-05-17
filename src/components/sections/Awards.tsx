@@ -2,6 +2,7 @@ import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 import { Container } from "@/components/ui/Container";
 import { Eyebrow } from "@/components/ui/Eyebrow";
+import { Reveal } from "@/components/ui/Reveal";
 
 const TRIPADVISOR_URL =
   "https://www.tripadvisor.com/Restaurant_Review-g188590-d2244593-Reviews-Villa_Maria_Steakhouse-Amsterdam_North_Holland_Province.html";
@@ -20,7 +21,7 @@ export async function Awards() {
     <section className="bg-vm-cream text-vm-black">
       <Container className="py-20 md:py-28">
         <div className="grid gap-12 md:grid-cols-12 md:gap-16">
-          <div className="md:col-span-5">
+          <Reveal className="md:col-span-5">
             <Eyebrow>{t("eyebrow")}</Eyebrow>
             <h2 className="mt-4 text-3xl leading-tight md:text-4xl">
               {t("title")}
@@ -38,9 +39,9 @@ export async function Awards() {
               <span>{t("cta")}</span>
               <span aria-hidden className="transition-transform group-hover:translate-x-1">→</span>
             </a>
-          </div>
+          </Reveal>
 
-          <div className="md:col-span-7">
+          <Reveal delay={120} className="md:col-span-7">
             <ul className="grid grid-cols-2 gap-8 md:grid-cols-4 md:gap-6">
               {badges.map((b) => (
                 <li key={b.src} className="flex flex-col items-center justify-center">
@@ -56,7 +57,7 @@ export async function Awards() {
                 </li>
               ))}
             </ul>
-          </div>
+          </Reveal>
         </div>
       </Container>
     </section>

@@ -2,6 +2,7 @@ import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 import { Container } from "@/components/ui/Container";
 import { Eyebrow } from "@/components/ui/Eyebrow";
+import { Reveal } from "@/components/ui/Reveal";
 
 const PHONE_DISPLAY = "+31 20 622 3759";
 const PHONE_TEL = "+31206223759";
@@ -27,7 +28,7 @@ export async function GroupDining() {
 
       <Container className="relative py-20 md:py-28">
         <div className="grid gap-10 md:grid-cols-12">
-          <div className="md:col-span-7">
+          <Reveal className="md:col-span-7">
             <Eyebrow>{t("eyebrow")}</Eyebrow>
             <h2 className="mt-4 text-4xl leading-tight md:text-5xl">
               {t("title")}
@@ -35,7 +36,7 @@ export async function GroupDining() {
             <p className="mt-6 max-w-xl text-base leading-relaxed text-vm-cream/75 md:text-lg">
               {t("p")}
             </p>
-          </div>
+          </Reveal>
 
           <div className="flex flex-col items-start gap-4 md:col-span-5 md:items-end md:justify-end">
             <a

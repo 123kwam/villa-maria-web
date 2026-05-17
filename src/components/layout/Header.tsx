@@ -23,9 +23,11 @@ export function Header() {
   const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [mounted, setMounted] = useState(false);
+  const [restaurantOpen, setRestaurantOpen] = useState(false);
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 24);
+    const onScroll = () => setScrolled(window.scrollY > 80);
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
@@ -34,6 +36,24 @@ export function Header() {
   useEffect(() => {
     setMobileOpen(false);
   }, [pathname]);
+
+  useEffect(() => {
+    setMounted(true);
+    const check = () => {
+      const hour = parseInt(
+        new Intl.DateTimeFormat("en-US", {
+          timeZone: "Europe/Amsterdam",
+          hour: "numeric",
+          hour12: false,
+        }).format(new Date()),
+        10
+      );
+      setRestaurantOpen(hour >= 12 && hour < 23);
+    };
+    check();
+    const id = window.setInterval(check, 60_000);
+    return () => window.clearInterval(id);
+  }, []);
 
   return (
     <>
@@ -61,8 +81,10 @@ export function Header() {
         </div>
 
         <div
-          className={`border-b border-vm-black/10 bg-vm-cream/95 backdrop-blur-md transition-[padding] duration-300 ${
-            scrolled ? "py-2" : "py-4"
+          className={`border-b border-vm-black/10 transition-all duration-200 ${
+            scrolled
+              ? "bg-vm-cream/85 py-2 backdrop-blur-md"
+              : "bg-vm-cream py-3"
           }`}
         >
           <Container className="flex items-center justify-between gap-6">
@@ -77,8 +99,8 @@ export function Header() {
                 width={314}
                 height={198}
                 priority
-                className={`h-auto w-auto transition-[max-height] duration-300 ${
-                  scrolled ? "max-h-12" : "max-h-[4.25rem]"
+                className={`h-auto w-auto transition-[max-height] duration-200 ${
+                  scrolled ? "max-h-14" : "max-h-20"
                 }`}
               />
             </Link>
@@ -104,7 +126,19 @@ export function Header() {
               ))}
             </nav>
 
-            <div className="flex items-center gap-5">
+            <div className="flex items-center gap-4">
+              {mounted && restaurantOpen && (
+                <div className="flex items-center gap-2 lg:hidden">
+                  <span
+                    aria-hidden
+                    className="block h-1 w-1 rounded-full bg-green-500"
+                  />
+                  <span className="font-label text-xs uppercase tracking-widest text-vm-smoke">
+                    {tHeader("openToday")}
+                  </span>
+                </div>
+              )}
+
               <div className="hidden md:block">
                 <LanguageToggle />
               </div>
@@ -114,11 +148,8 @@ export function Header() {
                 onClick={() => setMobileOpen(true)}
                 aria-label={tHeader("openMenu")}
                 aria-expanded={mobileOpen}
-                className="group flex items-center gap-2 lg:hidden"
+                className="group lg:hidden"
               >
-                <span className="text-[10px] uppercase tracking-[0.3em] text-vm-black/70 transition-colors group-hover:text-vm-red">
-                  {tHeader("openMenu").split(" ")[0]}
-                </span>
                 <span
                   aria-hidden
                   className="grid h-9 w-9 place-items-center border border-vm-black/30 transition-colors group-hover:border-vm-red"

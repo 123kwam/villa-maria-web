@@ -2,6 +2,7 @@ import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { Container } from "@/components/ui/Container";
 import { Eyebrow } from "@/components/ui/Eyebrow";
+import { Reveal } from "@/components/ui/Reveal";
 
 const PHONE_DISPLAY = "+31 20 622 3759";
 const PHONE_TEL = "+31206223759";
@@ -13,13 +14,13 @@ export async function FooterCTA() {
     <section className="bg-vm-cream text-vm-black">
       <Container className="py-20 md:py-28">
         <div className="flex flex-col items-start gap-10 md:flex-row md:items-end md:justify-between md:gap-16">
-          <div className="max-w-2xl">
+          <Reveal className="max-w-2xl">
             <Eyebrow>{t("eyebrow")}</Eyebrow>
             <h2 className="mt-4 text-5xl leading-[0.95] md:text-6xl lg:text-7xl">
               <span className="block">{t("title")}</span>
               <span className="block italic text-vm-red">{t("titleTwo")}</span>
             </h2>
-          </div>
+          </Reveal>
 
           <div className="flex w-full flex-col items-stretch gap-3 sm:flex-row sm:items-center md:w-auto md:flex-col md:items-end">
             <Link
