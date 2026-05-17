@@ -67,3 +67,17 @@ body {
   font-variant-numeric: tabular-nums lining-nums;
   font-feature-settings: "tnum", "lnum";
 }
+
+@keyframes hero-zoom {
+  from { transform: scale(1.05); }
+  to { transform: scale(1); }
+}
+
+@keyframes scroll-dot {
+  0%   { transform: translateY(0); opacity: 0.3; }
+  50%  { transform: translateY(44px); opacity: 1; }
+  100% { transform: translateY(0); opacity: 0.3; }
+}
+
+.animate-hero-zoom { animation: hero-zoom 1200ms ease-out forwards; }
+.animate-scroll-dot { animation: scroll-dot 2.5s ease-in-out infinite; }

@@ -78,7 +78,7 @@ export function Header() {
                 height={198}
                 priority
                 className={`h-auto w-auto transition-[max-height] duration-300 ${
-                  scrolled ? "max-h-10" : "max-h-14"
+                  scrolled ? "max-h-12" : "max-h-[4.25rem]"
                 }`}
               />
             </Link>

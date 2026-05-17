@@ -1,13 +1,12 @@
 import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
-import { Container } from "@/components/ui/Container";
 
 export async function Hero() {
   const t = await getTranslations("Hero");
 
   return (
-    <section className="relative isolate overflow-hidden bg-vm-black text-vm-cream">
+    <section className="relative isolate flex min-h-[85vh] flex-col overflow-hidden bg-vm-black text-vm-cream md:min-h-screen">
       <div className="absolute inset-0">
         <Image
           src="/images/hero/grill.jpg"
@@ -15,20 +14,21 @@ export async function Hero() {
           fill
           priority
           sizes="100vw"
-          className="object-cover opacity-60"
+          className="animate-hero-zoom object-cover"
+          style={{ objectPosition: "65% 50%" }}
         />
         <div
           aria-hidden
-          className="absolute inset-0 bg-gradient-to-t from-vm-black via-vm-black/55 to-vm-black/35"
+          className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/40 to-black/10"
         />
         <div
           aria-hidden
-          className="absolute inset-0 bg-gradient-to-r from-vm-black/85 via-transparent to-vm-black/40"
+          className="absolute inset-x-0 bottom-0 h-[30%] bg-gradient-to-t from-black/60 to-transparent"
         />
       </div>
 
-      <Container as="div" className="relative flex min-h-[88vh] flex-col justify-end py-20 md:py-28">
-        <div className="max-w-3xl">
+      <div className="relative z-10 flex flex-1 flex-col justify-end px-8 pb-24 md:px-16 xl:px-24">
+        <div className="max-w-2xl">
           <p className="mb-6 text-[11px] uppercase tracking-[0.35em] text-vm-cream/70">
             {t("eyebrow")}
           </p>
@@ -67,7 +67,19 @@ export async function Hero() {
             </Link>
           </div>
         </div>
-      </Container>
+      </div>
+
+      <div
+        aria-hidden
+        className="absolute bottom-8 left-1/2 hidden -translate-x-1/2 flex-col items-center gap-3 md:flex"
+      >
+        <div className="relative h-12 w-px bg-white/40">
+          <span className="animate-scroll-dot absolute left-1/2 top-0 block h-1 w-1 -translate-x-1/2 rounded-full bg-white" />
+        </div>
+        <span className="text-xs uppercase tracking-widest text-white/60">
+          Scroll
+        </span>
+      </div>
 
       <div
         aria-hidden

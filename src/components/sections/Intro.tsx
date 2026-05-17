@@ -8,12 +8,12 @@ export async function Intro() {
   return (
     <section className="bg-vm-cream text-vm-black">
       <Container className="py-20 md:py-28">
-        <div className="grid gap-10 md:grid-cols-12 md:gap-16">
-          <div className="md:col-span-3">
+        <div className="grid gap-6 lg:grid-cols-12 lg:gap-16">
+          <div className="lg:col-span-3">
             <Eyebrow>{t("eyebrow")}</Eyebrow>
           </div>
 
-          <div className="md:col-span-9">
+          <div className="lg:col-span-9">
             <p className="font-display text-2xl leading-snug text-vm-black first-letter:float-left first-letter:mt-1 first-letter:pr-2 first-letter:font-display first-letter:text-[4em] first-letter:leading-[0.9] first-letter:text-vm-red md:text-4xl">
               {t("p1")}
             </p>
