@@ -81,3 +81,41 @@ body {
 
 .animate-hero-zoom { animation: hero-zoom 1200ms ease-out forwards; }
 .animate-scroll-dot { animation: scroll-dot 2.5s ease-in-out infinite; }
+
+@keyframes panel-fade {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+.animate-panel-fade { animation: panel-fade 300ms ease-out; }
+
+.no-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.no-scrollbar::-webkit-scrollbar { display: none; }
+
+@media print {
+  header,
+  footer,
+  [role="tablist"],
+  .print-hide {
+    display: none !important;
+  }
+  [role="tabpanel"] {
+    display: block !important;
+  }
+  [role="tabpanel"][hidden] {
+    display: block !important;
+  }
+  body {
+    background: #fff !important;
+    color: #000 !important;
+  }
+  @page {
+    margin: 2cm;
+  }
+  .menu-category {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+}

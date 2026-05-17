@@ -185,6 +185,7 @@
     "noteSauces": "Todas las salsas €2,50.",
     "noteCompleteDishes": "Servido con ensalada, papas fritas, arroz o papa al horno.",
     "noteFish": "Servido con guarniciones.",
+    "printMenu": "Imprimir carta",
     "categories": {
       "soups": "Sopas",
       "coldStarters": "Entrantes fríos",

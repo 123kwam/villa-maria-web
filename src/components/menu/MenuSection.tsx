@@ -5,6 +5,7 @@ import {
   type WeightedItem,
   type SingleItem,
 } from "@/data/menu";
+import { OrnamentalDivider } from "./OrnamentalDivider";
 
 type Props = {
   section: MenuSectionType;
@@ -25,19 +26,17 @@ export async function MenuSection({ section, index }: Props) {
           : null;
 
   return (
-    <section
-      id={section.key}
-      className="border-t border-vm-black/10 py-12 first:border-t-0 md:py-16"
-    >
-      <header className="mb-8 flex flex-wrap items-baseline gap-x-6 gap-y-2 md:mb-10">
+    <section id={section.key} className="py-12 md:py-16">
+      <header className="mb-8 flex flex-col items-center text-center">
         <span className="font-sans text-[11px] tabular-nums tracking-[0.3em] text-vm-red">
           {String(index + 1).padStart(2, "0")}
         </span>
-        <h2 className="text-3xl md:text-4xl">
+        <h2 className="mt-2 text-3xl tracking-[0.01em] md:text-4xl">
           {tCategories(section.key)}
         </h2>
+        <OrnamentalDivider className="mt-6" />
         {note && (
-          <p className="w-full text-sm italic text-vm-smoke md:ml-auto md:w-auto md:max-w-md md:text-right">
+          <p className="mt-4 max-w-md text-sm italic tracking-[0.01em] text-vm-smoke/80">
             {note}
           </p>
         )}
@@ -69,7 +68,7 @@ function SingleList({ items }: { items: SingleItem[] }) {
               {item.name}
             </p>
             {item.description && (
-              <p className="mt-0.5 text-sm italic text-vm-smoke">
+              <p className="mt-0.5 text-sm italic tracking-[0.01em] text-vm-smoke/80">
                 {item.description}
               </p>
             )}
